@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'database/shared_preferences_data.dart';
+import '../data/shared_preferences_data.dart';
 
 class BookmarkButton extends StatefulWidget {
   final bool isBookmarked;
   final String trackId;
-  BookmarkButton(this.isBookmarked, this.trackId);
+  const BookmarkButton(this.isBookmarked, this.trackId);
   @override
   State<BookmarkButton> createState() => _BookmarkButtonState();
 }
